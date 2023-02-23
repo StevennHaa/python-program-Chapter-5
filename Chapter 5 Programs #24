@@ -1,0 +1,29 @@
+#24
+from random import randrange 
+def main(): #computer random
+    r=randrange(1000,10000)
+    thous=r//1000
+    print(thous)
+    hundreds=(r%1000)//100
+    print(hundreds)
+    tens=(r%100)//10
+    print(tens)
+    ones=(r%10)
+    print(ones)
+    sum=thous+hundreds+tens+ones
+    print(r, "=", sum)
+main()
+
+def main(): #user input
+    num=eval(input("enter a 4 digit number between 1000 and 9999 "))
+    thous=num//1000
+    print(thous)
+    hundreds=(num%1000)//100
+    print(hundreds)
+    tens=(num%100)//10
+    print(tens)
+    ones=(num%10)
+    print(ones)
+    sum=thous+hundreds+tens+ones
+    print(num, "=", sum)
+main()
