@@ -7,6 +7,7 @@ def main():
     count=0
     while start>0 and start<7:
         r=randrange(1,3)
+        print(start)
         if r==1:
             count=count+1
             backwards=backwards+1
